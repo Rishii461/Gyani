@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subject Worlds - Interactive Learning Environments | Gyaanoo Learning Adventure</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Explore six magical learning worlds where each subject becomes an immersive adventure. From Math Mountain to Art Garden, discover knowledge through epic quests." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgyaanoole3757back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-soft sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#4F46E5"/>
+                            <path d="M12 20c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z" fill="#F59E0B"/>
+                            <circle cx="20" cy="20" r="4" fill="white"/>
+                            <path d="M16 16l8 8M24 16l-8 8" stroke="#4F46E5" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="font-fredoka text-xl text-primary">Gyaanoo</h1>
+                        <p class="text-xs text-text-secondary -mt-1">Learning Adventure</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage_adventure_learning_hub.html" class="text-text-secondary hover:text-primary font-nunito px-3 py-2 rounded-md text-sm transition-adventure">Home</a>
+                        <a href="subject_worlds_interactive_learning_environments.html" class="text-primary font-nunito font-semibold px-3 py-2 rounded-md text-sm">Worlds</a>
+                        <a href="avatar_universe_character_creation_progression.html" class="text-text-secondary hover:text-primary font-nunito px-3 py-2 rounded-md text-sm transition-adventure">Avatar</a>
+                        <a href="parent_command_center_progress_analytics_hub.html" class="text-text-secondary hover:text-primary font-nunito px-3 py-2 rounded-md text-sm transition-adventure">Parents</a>
+                        <a href="resource_library_educational_content_hub.html" class="text-text-secondary hover:text-primary font-nunito px-3 py-2 rounded-md text-sm transition-adventure">Resources</a>
+                        <a href="help_support_center_learning_guidance_hub.html" class="text-text-secondary hover:text-primary font-nunito px-3 py-2 rounded-md text-sm transition-adventure">Help</a>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="btn-secondary text-sm px-4 py-2">Sign In</button>
+                    <button class="btn-primary text-sm px-4 py-2">Start Free Trial</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with World Map -->
+    <section class="relative bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50 overflow-hidden py-16">
+        <div class="absolute inset-0">
+            <svg class="absolute top-10 left-10 w-16 h-16 text-primary-200 animate-bounce-gentle" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+            </svg>
+            <svg class="absolute top-20 right-20 w-20 h-20 text-secondary-200 animate-pulse-soft" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"/>
+            </svg>
+            <svg class="absolute bottom-20 left-1/4 w-14 h-14 text-accent-200 animate-bounce-gentle" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="font-fredoka text-hero text-primary mb-6 leading-tight">
+                    Choose Your <span class="text-accent">Learning Adventure</span>
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Six magical worlds await your exploration. Each subject becomes an epic quest filled with discovery, challenges, and amazing rewards!
+                </p>
+                
+                <!-- Adventure Progress Overview -->
+                <div class="bg-white rounded-2xl p-6 shadow-elevated inline-block mb-8">
+                    <div class="flex items-center space-x-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-fredoka text-primary">73</div>
+                            <div class="text-sm text-text-secondary">Quests Completed</div>
+                        </div>
+                        <div class="w-px h-12 bg-border"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-fredoka text-accent">68</div>
+                            <div class="text-sm text-text-secondary">Badges Earned</div>
+                        </div>
+                        <div class="w-px h-12 bg-border"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-fredoka text-secondary">Level 4</div>
+                            <div class="text-sm text-text-secondary">Explorer Rank</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive World Selection Map -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- World Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Math Mountain -->
+                <div class="world-card group cursor-pointer transform hover:scale-105 transition-adventure" id="math-mountain">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Math Mountain - Crystalline peaks with numerical puzzles" class="w-full h-56 object-cover transition-adventure group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            🏔️ Math Mountain
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-primary px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            Level 1-5
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-nunito font-semibold text-primary">Progress</span>
+                                    <span class="text-sm text-text-secondary">65%</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-fredoka text-2xl text-primary">Crystalline Cave Adventures</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Scale mystical peaks while solving numerical puzzles embedded in climbing challenges. Discover geometric treasures in crystal caves!
+                        </p>
+                        
+                        <!-- Sub-environments -->
+                        <div class="space-y-2">
+                            <h4 class="font-nunito font-bold text-sm text-text-primary">Available Quests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-xs font-nunito">Number Valley</span>
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-xs font-nunito">Shape Caverns</span>
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-xs font-nunito">Pattern Peaks</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievement Stats -->
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-accent">🏆</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">12 Badges</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-secondary">⭐</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">8 Quests</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary text-sm px-4 py-2">Enter World</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- English Island -->
+                <div class="world-card group cursor-pointer transform hover:scale-105 transition-adventure" id="english-island">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" alt="English Island - Tropical storytelling paradise" class="w-full h-56 object-cover transition-adventure group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            🏝️ English Island
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-accent px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            Level 1-5
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-nunito font-semibold text-accent">Progress</span>
+                                    <span class="text-sm text-text-secondary">78%</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-accent h-2 rounded-full transition-all duration-500" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-fredoka text-2xl text-accent">Tropical Story Quests</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Embark on storytelling adventures through tropical paradise. Build vocabulary treasures and master language through epic tales!
+                        </p>
+                        
+                        <!-- Sub-environments -->
+                        <div class="space-y-2">
+                            <h4 class="font-nunito font-bold text-sm text-text-primary">Available Quests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-xs font-nunito">Story Beach</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-xs font-nunito">Word Lagoon</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-xs font-nunito">Grammar Grove</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievement Stats -->
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-accent">🏆</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">18 Badges</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-secondary">⭐</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">12 Quests</span>
+                                </div>
+                            </div>
+                            <button class="btn-accent text-sm px-4 py-2">Enter World</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EVS Forest -->
+                <div class="world-card group cursor-pointer transform hover:scale-105 transition-adventure" id="evs-forest">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EVS Forest - Lush ecosystem exploration" class="w-full h-56 object-cover transition-adventure group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-success text-white px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            🌲 EVS Forest
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-success px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            Level 1-5
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-nunito font-semibold text-success">Progress</span>
+                                    <span class="text-sm text-text-secondary">45%</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-success h-2 rounded-full transition-all duration-500" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-fredoka text-2xl text-success">Nature Discovery Missions</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Explore lush ecosystems and discover environmental secrets. Learn about nature, society, and our world through forest adventures!
+                        </p>
+                        
+                        <!-- Sub-environments -->
+                        <div class="space-y-2">
+                            <h4 class="font-nunito font-bold text-sm text-text-primary">Available Quests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-xs font-nunito">Animal Kingdom</span>
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-xs font-nunito">Plant Paradise</span>
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-xs font-nunito">Eco Warriors</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievement Stats -->
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-accent">🏆</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">8 Badges</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-secondary">⭐</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">5 Quests</span>
+                                </div>
+                            </div>
+                            <button class="bg-success text-white font-nunito font-semibold px-4 py-2 rounded-lg hover:bg-success-600 transition-adventure text-sm">Enter World</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Science Lab -->
+                <div class="world-card group cursor-pointer transform hover:scale-105 transition-adventure" id="science-lab">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Science Lab - Magical laboratory experiments" class="w-full h-56 object-cover transition-adventure group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            🔬 Science Lab
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-purple-600 px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            Level 1-5
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-nunito font-semibold text-purple-600">Progress</span>
+                                    <span class="text-sm text-text-secondary">52%</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-purple-600 h-2 rounded-full transition-all duration-500" style="width: 52%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-fredoka text-2xl text-purple-600">Magical Experiment Adventures</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Transform into a young scientist in this magical laboratory. Conduct spell-casting experiments and discover scientific wonders!
+                        </p>
+                        
+                        <!-- Sub-environments -->
+                        <div class="space-y-2">
+                            <h4 class="font-nunito font-bold text-sm text-text-primary">Available Quests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs font-nunito">Chemistry Corner</span>
+                                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs font-nunito">Physics Playground</span>
+                                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs font-nunito">Biology Bay</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievement Stats -->
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-accent">🏆</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">10 Badges</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-secondary">⭐</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">7 Quests</span>
+                                </div>
+                            </div>
+                            <button class="bg-purple-600 text-white font-nunito font-semibold px-4 py-2 rounded-lg hover:bg-purple-700 transition-adventure text-sm">Enter World</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GK Galaxy -->
+                <div class="world-card group cursor-pointer transform hover:scale-105 transition-adventure" id="gk-galaxy">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg" alt="GK Galaxy - Cosmic knowledge exploration" class="w-full h-56 object-cover transition-adventure group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            🌌 GK Galaxy
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-indigo-600 px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            Level 1-5
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-nunito font-semibold text-indigo-600">Progress</span>
+                                    <span class="text-sm text-text-secondary">33%</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-indigo-600 h-2 rounded-full transition-all duration-500" style="width: 33%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-fredoka text-2xl text-indigo-600">Space Knowledge Expeditions</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Journey through cosmic adventures while exploring general knowledge. Discover facts about cultures, history, and our amazing world!
+                        </p>
+                        
+                        <!-- Sub-environments -->
+                        <div class="space-y-2">
+                            <h4 class="font-nunito font-bold text-sm text-text-primary">Available Quests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-nunito">History Hub</span>
+                                <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-nunito">Culture Corner</span>
+                                <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-nunito">World Wonders</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievement Stats -->
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-accent">🏆</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">5 Badges</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-secondary">⭐</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">3 Quests</span>
+                                </div>
+                            </div>
+                            <button class="bg-indigo-600 text-white font-nunito font-semibold px-4 py-2 rounded-lg hover:bg-indigo-700 transition-adventure text-sm">Enter World</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art Garden -->
+                <div class="world-card group cursor-pointer transform hover:scale-105 transition-adventure" id="art-garden">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Art Garden - Vibrant creative landscape" class="w-full h-56 object-cover transition-adventure group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            🎨 Art Garden
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-pink-500 px-3 py-1 rounded-full text-sm font-nunito font-semibold">
+                            Level 1-5
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-nunito font-semibold text-pink-500">Progress</span>
+                                    <span class="text-sm text-text-secondary">71%</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-pink-500 h-2 rounded-full transition-all duration-500" style="width: 71%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-fredoka text-2xl text-pink-500">Creative Workshop Adventures</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Express your creativity in this ever-changing colorful paradise. Explore artistic skills through magical workshops and creative challenges!
+                        </p>
+                        
+                        <!-- Sub-environments -->
+                        <div class="space-y-2">
+                            <h4 class="font-nunito font-bold text-sm text-text-primary">Available Quests:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-pink-100 text-pink-500 px-3 py-1 rounded-full text-xs font-nunito">Color Castle</span>
+                                <span class="bg-pink-100 text-pink-500 px-3 py-1 rounded-full text-xs font-nunito">Craft Corner</span>
+                                <span class="bg-pink-100 text-pink-500 px-3 py-1 rounded-full text-xs font-nunito">Design Den</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievement Stats -->
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-accent">🏆</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">15 Badges</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <span class="text-secondary">⭐</span>
+                                    <span class="text-sm font-nunito font-semibold text-text-secondary">11 Quests</span>
+                                </div>
+                            </div>
+                            <button class="bg-pink-500 text-white font-nunito font-semibold px-4 py-2 rounded-lg hover:bg-pink-600 transition-adventure text-sm">Enter World</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Journal & Progress Tracking -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-fredoka text-display text-primary mb-4">📖 Your Adventure Journal</h2>
+                <p class="text-lg text-text-secondary">Track your epic learning journey across all worlds</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Skill Development Tree -->
+                <div class="card">
+                    <h3 class="font-fredoka text-xl text-primary mb-6">🌟 Skill Development Tree</h3>
+                    <div class="space-y-4">
+                        <!-- Math Skills -->
+                        <div class="flex items-center justify-between p-4 bg-primary-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                                    <span class="text-white font-nunito font-bold">🔢</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-nunito font-bold text-text-primary">Mathematics</h4>
+                                    <p class="text-sm text-text-secondary">Number Operations & Geometry</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-fredoka text-primary">Level 4</div>
+                                <div class="w-24 bg-border rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- English Skills -->
+                        <div class="flex items-center justify-between p-4 bg-accent-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                    <span class="text-white font-nunito font-bold">📚</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-nunito font-bold text-text-primary">English</h4>
+                                    <p class="text-sm text-text-secondary">Reading & Writing Adventures</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-fredoka text-accent">Level 5</div>
+                                <div class="w-24 bg-border rounded-full h-2">
+                                    <div class="bg-accent h-2 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Science Skills -->
+                        <div class="flex items-center justify-between p-4 bg-purple-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-nunito font-bold">🔬</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-nunito font-bold text-text-primary">Science</h4>
+                                    <p class="text-sm text-text-secondary">Experiments & Discoveries</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-fredoka text-purple-600">Level 3</div>
+                                <div class="w-24 bg-border rounded-full h-2">
+                                    <div class="bg-purple-600 h-2 rounded-full" style="width: 52%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Achievements -->
+                <div class="card">
+                    <h3 class="font-fredoka text-xl text-primary mb-6">🏆 Recent Achievements</h3>
+                    <div class="space-y-4">
+                        <!-- Achievement 1 -->
+                        <div class="flex items-center space-x-4 p-4 bg-success-50 rounded-lg">
+                            <div class="w-12 h-12 bg-success rounded-full flex items-center justify-center">
+                                <span class="text-white text-lg">🏔️</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-nunito font-bold text-text-primary">Mountain Climber</h4>
+                                <p class="text-sm text-text-secondary">Completed 10 Math Mountain quests</p>
+                                <p class="text-xs text-success font-nunito font-semibold">Earned 2 hours ago</p>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 2 -->
+                        <div class="flex items-center space-x-4 p-4 bg-accent-50 rounded-lg">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-lg">📖</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-nunito font-bold text-text-primary">Story Master</h4>
+                                <p class="text-sm text-text-secondary">Read 25 adventure stories</p>
+                                <p class="text-xs text-accent font-nunito font-semibold">Earned yesterday</p>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 3 -->
+                        <div class="flex items-center space-x-4 p-4 bg-pink-50 rounded-lg">
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-lg">🎨</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-nunito font-bold text-text-primary">Creative Genius</h4>
+                                <p class="text-sm text-text-secondary">Created 5 amazing artworks</p>
+                                <p class="text-xs text-pink-500 font-nunito font-semibold">Earned 3 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View All Button -->
+                    <div class="mt-6 text-center">
+                        <button class="btn-secondary text-sm px-6 py-2">View All Achievements</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Modalities & Accessibility -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-fredoka text-display text-primary mb-4">🎯 Personalized Learning Experience</h2>
+                <p class="text-lg text-text-secondary">Every adventure adapts to your unique learning style</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Visual Learning -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-fredoka text-xl text-primary mb-3">Visual Adventures</h3>
+                    <p class="text-text-secondary mb-4">Rich graphics, animations, and interactive visual elements bring learning to life</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs font-nunito">Animations</span>
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs font-nunito">Infographics</span>
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs font-nunito">Videos</span>
+                    </div>
+                </div>
+
+                <!-- Auditory Learning -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.793L4.617 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.617l3.766-2.793a1 1 0 011.617.793z"/>
+                            <path d="M12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-fredoka text-xl text-secondary mb-3">Audio Quests</h3>
+                    <p class="text-text-secondary mb-4">Voice narration, sound effects, and musical adventures enhance understanding</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs font-nunito">Narration</span>
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs font-nunito">Music</span>
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs font-nunito">Voice Commands</span>
+                    </div>
+                </div>
+
+                <!-- Kinesthetic Learning -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-fredoka text-xl text-accent mb-3">Interactive Challenges</h3>
+                    <p class="text-text-secondary mb-4">Hands-on activities, drag-and-drop exercises, and gesture-based interactions</p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs font-nunito">Touch Controls</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs font-nunito">Gestures</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs font-nunito">Activities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary-100 to-accent-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-fredoka text-display text-primary mb-4">Ready to Start Your Epic Learning Adventure?</h2>
+            <p class="text-lg text-text-secondary mb-8">
+                Choose your first world and begin an unforgettable journey of discovery, achievement, and fun!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-primary text-lg px-8 py-4">🚀 Begin Adventure</button>
+                <button class="btn-secondary text-lg px-8 py-4">📊 View Progress</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#4F46E5"/>
+                            <path d="M12 20c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z" fill="#F59E0B"/>
+                            <circle cx="20" cy="20" r="4" fill="white"/>
+                            <path d="M16 16l8 8M24 16l-8 8" stroke="#4F46E5" stroke-width="2"/>
+                        </svg>
+                        <div class="ml-3">
+                            <h3 class="font-fredoka text-xl">Gyaanoo</h3>
+                            <p class="text-sm text-gray-300 -mt-1">Learning Adventure</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Transforming education into epic adventures where every child becomes an explorer, scientist, artist, and adventurer.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-adventure">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-adventure">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-adventure">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-nunito font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage_adventure_learning_hub.html" class="text-gray-300 hover:text-white transition-adventure">Adventure Home</a></li>
+                        <li><a href="avatar_universe_character_creation_progression.html" class="text-gray-300 hover:text-white transition-adventure">Create Avatar</a></li>
+                        <li><a href="parent_command_center_progress_analytics_hub.html" class="text-gray-300 hover:text-white transition-adventure">Parent Dashboard</a></li>
+                        <li><a href="resource_library_educational_content_hub.html" class="text-gray-300 hover:text-white transition-adventure">Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-nunito font-bold text-lg mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="help_support_center_learning_guidance_hub.html" class="text-gray-300 hover:text-white transition-adventure">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-adventure">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-adventure">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-adventure">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Gyaanoo Learning Adventure. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
